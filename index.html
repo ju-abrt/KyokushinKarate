@@ -56,6 +56,17 @@
               <li class="nav-item">
                 <a class="nav-link m-1" href="#contact">Contact</a>
               </li>
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      FR
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">ENG</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              
             </ul>
 
           </div>
@@ -66,7 +77,7 @@
   </header>
 
   <section>
-    <h1 class="text-danger mt-2 mb-4 text-center">Actualités</h1>
+    <h1 class="text-danger mt-2 mb-4 pt-2 text-center">Actualités</h1>
 
     <div class="container">
       <div class="row justify-content-center">
@@ -82,7 +93,7 @@
                 aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <!--REDIMENSIONNER IMAGES !!!! img → alt / textes responsive CSS media queries-->
+             
               <div class="carousel-item active">
                 <img src="assets/img/carrousel1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption test d-block">
@@ -140,8 +151,14 @@
 
             <h4 class="text-secondary text-start">Qu'est-ce que le Kyokushin ?</h4>
 
+            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Nunc eget lorem dolor sed viverra ipsum nunc 
+            aliquet bibendum. Urna porttitor rhoncus dolor purus non enim praesent. 
+            Urna et pharetra pharetra massa massa ultricies. Eget mauris pharetra et ultrices neque 
+            ornare aenean. 
+            Augue interdum velit euismod in pellentesque massa placerat duis ultricies.</p>
 
-            <img src="assets/img/presentation.png" width="500px" class="img-fluid" alt="">
+            
           </div>
         </div>
       </div>
@@ -167,7 +184,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="assets/img/karateadultes.jpg" class="card-img-top" alt="...">
+            <img src="assets/img/karateadultes1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Karaté Adultes</h5>
               <p class="card-text text-secondary">This card has supporting text below as a natural lead-in to additional
@@ -177,7 +194,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="assets/img/karatesante.jpg" class="card-img-top" alt="...">
+            <img src="assets/img/karatesante.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Karaté Santé et Sénior +</h5>
               <p class="card-text text-secondary">This is a wider card with supporting text below as a natural lead-in
@@ -203,7 +220,7 @@
               <h5 class="card-title text-center m-2">Karaté Enfants/Adultes</h5>
               <p class="card-text">
               <ul>
-                <!--CSS list à puce → none-->
+                
                 <li>Vice-Président.</li>
                 <li>Diplôme d'instructeur fédéral.</li>
                 <li>CN 3 ème Dan F.F.K.A.M.A.</li>
@@ -275,7 +292,7 @@
           </div>
         </div>
       </div>
-      <div class="col border border-primary">
+      <div class="col border border-primary text-center">
         <div class="card text-dark bg-light mx-auto" style="max-width: 18rem;">
           <div class="card-header">
             <h5 class="card-title text-center">Tarifs</h5>
@@ -292,9 +309,9 @@
           </div>
 
         </div>
-
+        
         <div class="text-center">
-          <a class="btn btn-danger mt-3" href="">Télécharger la fiche d'inscription</a>
+          <a class="btn btn-danger mt-3" href="assets/doc/ficheinscription.pdf" target="_blank">Télécharger la fiche d'inscription</a>
         </div>
 
 
@@ -302,12 +319,12 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="container">
     <h1 class="text-danger mt-4 mb-5 pt-5 text-center">Contact</h1>
 
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col">
+    
+      <div class="row">
+        <div class="border border-danger">
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.3752908814577!2d0.3726461155951304!3d49.64722765279311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e040f52aa5f4a1%3A0xd55517b6293edef2!2sKyokushin%20Karat%C3%A9%20Club%20de%20GODERVILLE!5e0!3m2!1sfr!2sfr!4v1648812037661!5m2!1sfr!2sfr"
@@ -315,9 +332,10 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
+        </div>
 
-        <div class="col">
-          <div class="card text-dark bg-light mb-3" style="max-width: 25rem;">
+      <div class= "border border-primary">
+          <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
             <div class="card-header">
               <h5 class="card-title text-center">Coordonnées</h5>
             </div>
@@ -336,13 +354,14 @@
               </p>
             </div>
           </div>
-        </div>
+        
         <div class="container">
           <div class="row">
             <button type="button" class="btn btn-danger mt-4 mb-3 w-25" data-bs-toggle="modal"
               data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Nous contacter</button>
           </div>
         </div>
+      </div>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -376,7 +395,7 @@
         </div>
 
       </div>
-    </div>
+    
   </section>
 
   <footer class="pt-5 bg-dark">
