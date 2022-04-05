@@ -6,3 +6,14 @@
 /* .test {
   font-size: 0.5rem;
 } */
+
+/*@media  (min-width: 200px) and (max-width: 765px){
+  #map {
+    width:300px;
+  }
+} */
+
+.map {
+  width:100%;
+  height:22rem;
+}
