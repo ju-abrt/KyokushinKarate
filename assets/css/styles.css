@@ -17,3 +17,8 @@
   width:100%;
   height:22rem;
 }
+
+
+.textopacity {
+  background-color: rgba(58, 57, 57, 0.5);
+}
